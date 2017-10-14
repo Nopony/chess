@@ -1,0 +1,3 @@
+/home/nopony/projects-dev/chess/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nopony/projects-dev/chess/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nopony/projects-dev/chess/cmake-build-debug/CMakeFiles/opencv.dir

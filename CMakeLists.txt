@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.5)
+project(opencv)
+
+
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(SOURCE_FILES main.cpp)
+add_executable(opencv ${SOURCE_FILES})
+#set_target_properties(opencv PROPERTIES LINK_SEARCH_START_STATIC 1)
+#set_target_properties(opencv PROPERTIES LINK_SEARCH_END_STATIC 1)
+#set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+#set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -lpthread")
+include_directories(${OpenCV_INCLUDE_DIRS} /usr/include/curl /home/nopony/tools-dev/boost_1_65_1 /home/nopony/tools-dev/socket.io-client-cpp/build/include)
+#link_directories(/usr/lib /home/nopony/tools-dev/boost_1_65_1/stage/lib /home/nopony/tools-dev/socket.io-client-cpp/build/lib /usr/lib/x86_64-linux-gnu)
+#link_libraries("-static")
+target_link_libraries(opencv ${OpenCV_LIBS} curl)
