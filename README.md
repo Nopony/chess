@@ -13,10 +13,10 @@ Naturally, to see any results, the chess_client git repo (which contains the ser
 
 ### Demo
 Before running, the app requires some setup, namely mapping the markings on board vertices and pawns to HSV color bounds. The findBounds script is provided to assist with that.
-[Finding Bounds](https://github.com/Nopony/chess/demo/setup.png)
+![Finding Bounds](https://raw.githubusercontent.com/Nopony/chess/master/demo/setup.png)
 
 Once configured, the running app looks like this
-[Running](https://github.com/Nopony/chess/demo/operation.png)
+![Running](https://raw.githubusercontent.com/Nopony/chess/master/demo/operation.png)
 
 
 
